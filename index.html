@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #333;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+        }
+        .opciones {
+            list-style: none;
+            padding: 0;
+        }
+        .opciones li {
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        #temporizador {
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Interactivo</h1>
+    <div id="quiz">
+        <p id="temporizador">Tiempo restante: <span id="tiempo">10</span> segundos</p>
+        <div id="contenedor-pregunta"></div>
+        <ul id="opciones" class="opciones"></ul>
+        <button id="btn-siguiente" style="display:none;">Siguiente</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
